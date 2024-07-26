@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:textColor="#FFFFFF"
+    android:background="@drawable/gradient_background"
+    tools:context=".ToysActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Cars -->
+        <TextView
+            android:id="@+id/textViewCars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cars"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_margin="16dp"/>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollViewCars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCars">
+
+            <!-- Cars Layout -->
+            <LinearLayout
+                android:id="@+id/linearLayoutCars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Car 1 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <!-- ImageView for displaying car 1 image -->
+                    <ImageView
+                        android:id="@+id/imageViewCars1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/c1"/>
+
+                    <!-- EditText for specifying amount of cars 1 -->
+                    <EditText
+                        android:id="@+id/etCars1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter amount"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+                <!-- Add more layouts for car images (up to 5) -->
+                <!-- Car 2 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <!-- ImageView for displaying car 2 image -->
+                    <ImageView
+                        android:id="@+id/imageViewCars2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/c2"/>
+
+                    <!-- EditText for specifying amount of cars 2 -->
+                    <EditText
+                        android:id="@+id/etCars2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter amount"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+                <!-- Add more layouts for car images (up to 5) -->
+                <!-- Car 3 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <!-- ImageView for displaying car 3 image -->
+                    <ImageView
+                        android:id="@+id/imageViewCars3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/c3"/>
+
+                    <!-- EditText for specifying amount of cars 3 -->
+                    <EditText
+                        android:id="@+id/etCars3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter amount"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+                <!-- Add more layouts for car images (up to 5) -->
+                <!-- Car 4 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <!-- ImageView for displaying car 4 image -->
+                    <ImageView
+                        android:id="@+id/imageViewCars4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/c4"/>
+
+                    <!-- EditText for specifying amount of cars 4 -->
+                    <EditText
+                        android:id="@+id/etCars4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter amount"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+                <!-- Add more layouts for car images (up to 5) -->
+                <!-- Car 5 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <!-- ImageView for displaying car 5 image -->
+                    <ImageView
+                        android:id="@+id/imageViewCars5"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/c5"/>
+
+                    <!-- EditText for specifying amount of cars 5 -->
+                    <EditText
+                        android:id="@+id/etCars5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter amount"
+                        android:inputType="number"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Miscellaneous -->
+        <TextView
+            android:id="@+id/textViewMisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miscellaneous"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_below="@id/horizontalScrollViewCars"
+            android:layout_margin="16dp"/>
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollViewMisc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewMisc">
+
+            <!-- Miscellaneous Layout -->
+            <LinearLayout
+                android:id="@+id/linearLayoutMisc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Misc 1 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <!-- ImageView for displaying misc 1 image -->
+                    <ImageView
+                        android:id="@+id/imageViewMisc1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/j1"/>
+
+                    <!-- EditText for specifying amount of misc 1 -->
+                    <EditText
+                        android:id="@+id/etMisc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter amount"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+                <!-- Add more layouts for misc images (up to 5) -->
+                <!-- Misc 2 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <!-- ImageView for displaying misc 2 image -->
+                    <ImageView
+                        android:id="@+id/imageViewMisc2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/j2"/>
+
+                    <!-- EditText for specifying amount of misc 2 -->
+                    <EditText
+                        android:id="@+id/etMisc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter amount"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+                <!-- Add more layouts for misc images (up to 5) -->
+                <!-- Misc 3 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <!-- ImageView for displaying misc 3 image -->
+                    <ImageView
+                        android:id="@+id/imageViewMisc3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/j3"/>
+
+                    <!-- EditText for specifying amount of misc 3 -->
+                    <EditText
+                        android:id="@+id/etMisc3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter amount"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+                <!-- Add more layouts for misc images (up to 5) -->
+                <!-- Misc 4 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <!-- ImageView for displaying misc 4 image -->
+                    <ImageView
+                        android:id="@+id/imageViewMisc4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/j4"/>
+
+                    <!-- EditText for specifying amount of misc 4 -->
+                    <EditText
+                        android:id="@+id/etMisc4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter amount"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+                <!-- Add more layouts for misc images (up to 5) -->
+                <!-- Misc 5 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <!-- ImageView for displaying misc 5 image -->
+                    <ImageView
+                        android:id="@+id/imageViewMisc5"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/j5"/>
+
+                    <!-- EditText for specifying amount of misc 5 -->
+                    <EditText
+                        android:id="@+id/etMisc5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter amount"
+                        android:inputType="number"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Dolls -->
+        <TextView
+            android:id="@+id/textViewDolls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dolls"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_below="@id/horizontalScrollViewMisc"
+            android:layout_margin="16dp"/>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollViewDolls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDolls">
+
+            <!-- Dolls Layout -->
+            <LinearLayout
+                android:id="@+id/linearLayoutDolls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Dolls 1 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <!-- ImageView for displaying dolls 1 image -->
+                    <ImageView
+                        android:id="@+id/imageViewDolls1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/t1"/>
+
+                    <!-- EditText for specifying amount of dolls 1 -->
+                    <EditText
+                        android:id="@+id/etDolls1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter amount"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+                <!-- Add more layouts for dolls images (up to 5) -->
+                <!-- Dolls 2 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <!-- ImageView for displaying dolls 2 image -->
+                    <ImageView
+                        android:id="@+id/imageViewDolls2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/t2"/>
+
+                    <!-- EditText for specifying amount of dolls 2 -->
+                    <EditText
+                        android:id="@+id/etDolls2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter amount"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+                <!-- Add more layouts for dolls images (up to 5) -->
+                <!-- Dolls 3 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+                    <!-- ImageView for displaying dolls 3 image -->
+                    <ImageView
+                        android:id="@+id/imageViewDolls3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/e1"/>
+
+                    <!-- EditText for specifying amount of dolls 3 -->
+                    <EditText
+                        android:id="@+id/etDolls3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter amount"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+                <!-- Add more layouts for dolls images (up to 5) -->
+                <!-- Dolls 4 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <!-- ImageView for displaying dolls 4 image -->
+                    <ImageView
+                        android:id="@+id/imageViewDolls4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/t4"/>
+
+                    <!-- EditText for specifying amount of dolls 4 -->
+                    <EditText
+                        android:id="@+id/etDolls4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter amount"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+                <!-- Add more layouts for dolls images (up to 5) -->
+                <!-- Dolls 5 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <!-- ImageView for displaying dolls 5 image -->
+                    <ImageView
+                        android:id="@+id/imageViewDolls5"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/t5"/>
+
+                    <!-- EditText for specifying amount of dolls 5 -->
+                    <EditText
+                        android:id="@+id/etDolls5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter amount"
+                        android:inputType="number"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Donate Button -->
+        <Button
+            android:id="@+id/btn_donate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donate"
+            android:layout_below="@id/horizontalScrollViewDolls"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+    </RelativeLayout>
+</ScrollView>
+
+
+

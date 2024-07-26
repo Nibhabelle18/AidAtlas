@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_background"
+    android:textColor="#FFFFFF"
+    tools:context=".ClothesKActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Top -->
+        <TextView
+            android:id="@+id/textViewTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top"
+            android:textSize="20sp"
+            android:layout_margin="16dp"/>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollViewTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTop">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- ImageView for displaying top images -->
+                <ImageView
+                    android:id="@+id/imageViewTop1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/k1"/>
+
+                <!-- EditText for specifying amount of top 1 -->
+                <EditText
+                    android:id="@+id/etTop1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:layout_margin="8dp"/>
+
+                <!-- Add more ImageViews and EditText fields for top images (up to 5) -->
+                <ImageView
+                    android:id="@+id/imageViewTop2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/k2"/>
+
+                <EditText
+                    android:id="@+id/etTop2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/imageViewTop3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/k3"/>
+
+                <EditText
+                    android:id="@+id/etTop3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/imageViewTop4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/k4"/>
+
+                <EditText
+                    android:id="@+id/etTop4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/imageViewTop5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/k5"/>
+
+                <EditText
+                    android:id="@+id/etTop5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:layout_margin="8dp"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <!-- Bottom -->
+        <TextView
+            android:id="@+id/textViewBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Bottom"
+            android:textSize="20sp"
+            android:layout_below="@id/horizontalScrollViewTop"
+            android:layout_margin="16dp"/>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollViewBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewBottom">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- ImageView for displaying bottom images -->
+                <ImageView
+                    android:id="@+id/imageViewBottom1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/b1"/>
+
+                <!-- EditText for specifying amount of bottom 1 -->
+                <EditText
+                    android:id="@+id/etBottom1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:layout_margin="8dp"/>
+
+                <!-- Add more ImageViews and EditText fields for bottom images (up to 5) -->
+                <ImageView
+                    android:id="@+id/imageViewBottom2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/b2"/>
+
+                <EditText
+                    android:id="@+id/etBottom2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/imageViewBottom3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/b3"/>
+
+                <EditText
+                    android:id="@+id/etBottom3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/imageViewBottom4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/b4"/>
+
+                <EditText
+                    android:id="@+id/etBottom4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/imageViewBottom5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/b5"/>
+
+                <EditText
+                    android:id="@+id/etBottom5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:layout_margin="8dp"/>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <!-- Shoes -->
+        <TextView
+            android:id="@+id/textViewShoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shoes"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_below="@id/horizontalScrollViewBottom"
+            android:layout_margin="16dp"/>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollViewShoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewShoes">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutShoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- ImageView for displaying shoe images -->
+                <ImageView
+                    android:id="@+id/imageViewShoes1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/s1"/>
+
+                <!-- EditText for specifying amount of shoes 1 -->
+                <EditText
+                    android:id="@+id/etShoes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:layout_margin="8dp"/>
+
+                <!-- Add more ImageViews and EditText fields for shoe images (up to 5) -->
+                <ImageView
+                    android:id="@+id/imageViewShoes2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/s2"/>
+
+                <EditText
+                    android:id="@+id/etShoes2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/imageViewShoes3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/s3"/>
+
+                <EditText
+                    android:id="@+id/etShoes3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/imageViewShoes4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/s4"/>
+
+                <EditText
+                    android:id="@+id/etShoes4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/imageViewShoes5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/s5"/>
+
+                <EditText
+                    android:id="@+id/etShoes5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:layout_margin="8dp"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <!-- Donate Button -->
+        <Button
+            android:id="@+id/btn_donate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donate"
+            android:layout_below="@id/horizontalScrollViewShoes"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+    </RelativeLayout>
+</ScrollView>
